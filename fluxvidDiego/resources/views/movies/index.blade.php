@@ -1,5 +1,7 @@
 
     @extends('layout.layout')
+
+    @section('title','movies')
     @section('body')
 
     <h1>Disfruta de estas películas: </h1>
