@@ -1,0 +1,15 @@
+header{
+    background-color: rgb(253, 107, 97);
+    height: 200px;
+}
+
+main{
+    background-color: rgb(124, 119, 119);
+    height: 400px;
+}
+
+footer{
+    background-color: rgb(200, 250, 250);
+    height: 200px;
+
+}
