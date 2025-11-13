@@ -17,3 +17,4 @@
     @include('layout.partials.footer')
 </body>
 </html>
+  

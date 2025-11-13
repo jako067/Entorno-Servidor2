@@ -15,7 +15,7 @@ Aquí apareceran los mensajes
         @endforeach
     @endif
 
-    <form method="post" action="{{route('message.store')}}">
+    <form method="post" action="{{route('messages.store',$message)}}">
         @csrf
         <label for="name">Nombre</label>
         <input type="text" name="name" id="name">
