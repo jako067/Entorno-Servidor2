@@ -14,5 +14,5 @@ Route::resource('players',  PlayersController::class);
 Route::resource('events',  EventController::class);
 Route::resource('messages',  MessageController::class);
 
-Route::resource('events/likeDislike',  [EventController::class,'likeDislike']);
-Route::resource('events/delete',  [EventController::class,'delete']);
+Route::get('events/likeDislike',  [EventController::class,'likeDislike']);
+Route::get('events/delete',  [EventController::class,'delete']);
