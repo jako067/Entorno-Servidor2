@@ -12,8 +12,11 @@ class MovieController extends Controller
      */
     public function index()
     {
+
         $movies = Movie::where('visibility',1)->orderBy('title','ASC')->get();
         return view('movies.index',compact('movies'));
+
+
     }
 
     /**

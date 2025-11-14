@@ -2,19 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Anime;
 use Illuminate\Http\Request;
 
-class AnimeController extends Controller
+class PlayerController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $animes =Anime::orderBy('release_year')->paginate('5');
-
-        return view('animes.index',compact('animes'));
+        return view('players.index');
     }
 
     /**
@@ -36,15 +33,15 @@ class AnimeController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Anime $anime)
+    public function show(string $player)
     {
-        return view('animes.show',compact('anime'));
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Anime $anime)
+    public function edit(string $player)
     {
         //
     }
@@ -52,7 +49,7 @@ class AnimeController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Anime $anime)
+    public function update(Request $request, string $player)
     {
         //
     }
@@ -60,9 +57,8 @@ class AnimeController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Anime $anime)
+    public function destroy(string $player)
     {
-        $anime->delete();
-        return redirect()->route('animes.index');
+        //
     }
 }
