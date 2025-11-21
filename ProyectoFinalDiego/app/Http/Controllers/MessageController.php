@@ -27,12 +27,12 @@ class MessageController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request, string $message)
+    public function store(Request $request)
     {
         $message['name']=$request->input('name');
         $message['nationality']=$request->input('nationality');
         $message['born']=$request->input('born');
-        return view('actors.store',compact('actor'));
+        return view('messages.store',compact('message'));
     }
 
     /**

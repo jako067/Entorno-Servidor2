@@ -5,10 +5,12 @@ use App\Http\Controllers\EventController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\MessageController;
 use App\Http\Controllers\ShopController;
+use App\Http\Controllers\WhereController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', IndexController::class)->name('index');
 Route::get('shop', ShopController::class)->name('shop');
+Route::get('where', WhereController::class)->name('where');
 
 Route::resource('players',  PlayersController::class);
 Route::resource('events',  EventController::class);

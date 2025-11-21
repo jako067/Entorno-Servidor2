@@ -15,7 +15,7 @@ Aquí apareceran los mensajes
         @endforeach
     @endif
 
-    <form method="post" action="{{route('messages.store',$message)}}">
+    <form method="post" action="{{route('messages.store')}}">
         @csrf
         <label for="name">Nombre</label>
         <input type="text" name="name" id="name">
@@ -23,7 +23,7 @@ Aquí apareceran los mensajes
         <input type="text" name="nationality" id="nationality">
         <label for="born">Fecha de nacimiento</label>
         <input type="text" name="born" id="born">
-
+        
         <input type="submit" name="submit" id="submit">
 
 
